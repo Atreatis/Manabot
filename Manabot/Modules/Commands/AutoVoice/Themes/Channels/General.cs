@@ -1,0 +1,58 @@
+namespace Manabot.Modules.Commands.AutoVoice.Themes;
+
+public class General: ITheme
+{
+    public string GetRandom() => List[new Random().Next(List.Count)];
+    private static List<string> List =>
+    [
+        "Spawn Point",
+        "Respawn Zone",
+        "Final Boss Lair",
+        "Critical Hit",
+        "XP Farm",
+        "Loot Cave",
+        "Squad Comms",
+        "Party Chat",
+        "The Lobby",
+        "Ranked Queue",
+        "Quest Hub",
+        "Dungeon Run",
+        "Raid Call",
+        "Co-Op Mode",
+        "PvP Arena",
+        "Battle Royale",
+        "Checkpoint",
+        "Save Point",
+        "Patch Notes",
+        "Side Quest",
+        "Grinding Spot",
+        "Victory Royale",
+        "Overtime",
+        "Clutch Zone",
+        "Endgame",
+        "Respawn Timer",
+        "First Blood",
+        "Headshot Only",
+        "Mana Pool",
+        "Item Shop",
+        "Skill Tree",
+        "Boss Raid",
+        "Spawn Killers",
+        "Critical Damage",
+        "Rank Reset",
+        "Hard Mode",
+        "Tutorial Level",
+        "Speedrun Zone",
+        "Meta Strats",
+        "Final Circle",
+        "Top Fraggers",
+        "Noob Lobby",
+        "Pro League",
+        "Team Wipe",
+        "Lag Zone",
+        "Patch Update",
+        "Combo Chain",
+        "Level Up",
+        "Game Over"
+    ];
+}

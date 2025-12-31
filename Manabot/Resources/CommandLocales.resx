@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+
+    <!-- Command: Ping -->
+    <data name="ping.title" xml:space="preserve">
+        <value>Ping!</value>
+        <comment/>
+    </data>
+    
+    <data name="ping.description" xml:space="preserve">
+        <value>Current shard count is {0} and your shard number is {1} and latency is {2}ms.</value>
+        <comment/>
+    </data>
+
+    <!-- Command: Auto Voice -->
+    <data name="autovoice.title" xml:space="preserve">
+        <value>AutoVoice</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.description" xml:space="preserve">
+        <value>**Setup Auto Voice on your Discord server.**&#13;Over here you can either choose to **setup auto voice channels** or adjust its properties per channel you have already setup.&#13;&#13;For example you can choose to adjust the **user limit** in your channel or change a **channel themes** for different channel names.</value>
+        <comment/>
+    </data>
+
+    <!-- Auto Voice: Buttons Group -->
+    <data name="autovoice.button.setup" xml:space="preserve">
+        <value>Setup Channel</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.button.theme" xml:space="preserve">
+        <value>Setup Theme</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.button.limit" xml:space="preserve">
+        <value>Setup Limit</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.button.disable" xml:space="preserve">
+        <value>Disable Channel</value>
+        <comment/>
+    </data>
+
+    <!-- Auto Voice: Setup Theme -->
+    <data name="autovoice.theme.channel.title" xml:space="preserve">
+        <value>Auto Voice: Choose Channel.</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.theme.channel.description" xml:space="preserve">
+        <value>Please select an existing **auto voice channel** that you already have setup and want to have different names for once they are created.
+
+        This channel and setting can still be modified later with a specific theme and user join limit by re-running `/autovoice` command in the future.</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.theme.channel.select" xml:space="preserve">
+        <value>Select Channel...</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.theme.select.title" xml:space="preserve">
+        <value>Auto Voice: Choose your theme...</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.theme.select.description" xml:space="preserve">
+        <value>Please choose your desired channel theme you want to use for newly created channels when join to create has been triggered.</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.theme.updated.title" xml:space="preserve">
+        <value>Auto Voice: Channel theme Set!</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.theme.updated.description" xml:space="preserve">
+        <value>The channel theme has been successfully set to {0}. New channels will be created with the theme of **{1}**.</value>
+        <comment/>
+    </data>
+    
+    <data name="autovoice.theme.select.placeholder" xml:space="preserve">
+        <value>Select channel theme...</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.theme.select.theme.description" xml:space="preserve">
+        <value>Random {0} related channel names</value>
+        <comment/>
+    </data>
+
+    <!-- Auto Voice: Theme Options -->
+    <data name="autovoice.theme.select.general" xml:space="preserve">
+        <value>General</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.theme.select.pirates" xml:space="preserve">
+        <value>Pirates</value>
+        <comment/>
+    </data>
+    
+    <data name="autovoice.theme.select.finalfantasy" xml:space="preserve">
+        <value>Final Fantasy</value>
+        <comment/>
+    </data>
+
+    <!-- Auto Voice: Theme Set -->
+    <data name="autovoice.theme.set.title" xml:space="preserve">
+        <value>Auto Voice: Choose your theme</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.theme.set.description" xml:space="preserve">
+        <value>Please choose your desired channel theme you want to use for newly created channels when join to create has been triggered.</value>
+        <comment/>
+    </data>
+    
+    <!-- Auto Voice: Disable -->
+    <data name="autovoice.disable.title" xml:space="preserve">
+        <value>Select channel theme</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.disable.channel.select" xml:space="preserve">
+        <value>Select Channel...</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.disable.description" xml:space="preserve">
+        <value>This will remove the auto voice channel from the database and no longer create channels once joined.
+
+        You can always add this channel again through the `/autovoice` command in the future.</value>
+        <comment/>
+    </data>
+    
+    <!-- Auto Voice: Setup Channel -->
+    <data name="autovoice.setup.channel.title" xml:space="preserve">
+        <value>Auto Voice: Setup Channel</value>
+        <comment/>
+    </data>
+    
+    <data name="autovoice.disable.channel.success" xml:space="preserve">
+        <value>{0} has been disabled and successfully removed from the database. This channel will no longer create channels when users join.
+
+        You can always setup the channel again in the future with the `/autovoice` command."</value>
+        <comment/>
+    </data>
+    
+    <data name="autovoice.setup.channel.description" xml:space="preserve">
+    <value>Auto Voice has been successfully setup for channel {0}. You can now join the channel and the bot will create channels with the default theme.
+
+        If you wish to change the channel theme or user limit run `/autovoice` again and choose the other options and pick the {0} channel when asked.</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.setup.channel.complete" xml:space="preserve">
+        <value>Select **voice channel** that members should join in-order to create a new temporary channel within your Discord server.
+
+        This channel can be modified later with a specific theme and user join limit after initial setup.</value>
+        <comment/>
+    </data>
+
+    <!-- Auto Voice: Setup Voice Channel -->
+    <data name="autovoice.setup.channel.voicechannel" xml:space="preserve">
+        <value>Voice Channel</value>
+        <comment/>
+    </data>
+    
+    <!-- Auto Voice: User Limit -->
+    <data name="autovoice.users.title" xml:space="preserve">
+        <value>Auto Voice: User Limit</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.users.description" xml:space="preserve">
+        <value>Please select an existing **auto voice channel** that you already have setup and want to limit the amount of users that can join upon creation.
+    
+        This channel and setting can still be modified later with a specific theme and user join limit by re-running `/autovoice` command in the future.</value>
+        <comment/>
+    </data>
+    
+    <!-- Auto Voice: Users Limit Voice Channel -->
+    <data name="autovoice.users.voicechannel" xml:space="preserve">
+        <value>Voice Channel</value>
+        <comment/>
+    </data>
+
+    <!-- Auto Voice: Limit Select Users -->
+    <data name="autovoice.users.select.title" xml:space="preserve">
+        <value>Auto Voice: Setup User Limit</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.users.select.description" xml:space="preserve">
+        <value>Choose the desired channel that you want to enforce a user limit to newly created channels.</value>
+        <comment/>
+    </data>
+
+    <!-- Auto Voice: Select Users -->
+    <data name="autovoice.users.select.limit" xml:space="preserve">
+        <value>User limit...</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.users.select.limit.default" xml:space="preserve">
+        <value>Default (No limit)</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.users.select.limit.users" xml:space="preserve">
+        <value>Users</value>
+        <comment/>
+    </data>
+
+    <!-- Auto Voice: User Limit Set! -->
+    <data name="autovoice.users.select.limit.set.title" xml:space="preserve">
+        <value>Auto Voice: User Limit Set!</value>
+        <comment/>
+    </data>
+
+    <data name="autovoice.users.select.limit.set.description" xml:space="preserve">
+        <value>The channel user limit has been successfully set for {0}. New channels will be created with the limit of **{1}** users.</value>
+        <comment/>
+    </data>
+    
+    <!-- Auto Voice: Channel Not Found! -->
+    <data name="autovoice.channel.notfound" xml:space="preserve">
+        <value>The channel does not exists within the database, you can try again by doing the `/autovoice` slash command again and choose a different channel.</value>
+        <comment/>
+    </data>
+    
+    <!-- Auto Voice: Permission Error -->
+    <data name="autovoice.error.permission" xml:space="preserve">
+        <value>Permission error! **{0}** has no permission for **{1}** in {2}. Please make sure the bot has corresponding permissions set before trying again.</value>
+        <comment/>
+    </data>
+    
+    <!-- Auto Voice: Channel Exists -->
+    <data name="autovoice.error.channel.exists" xml:space="preserve">
+        <value>Auto voice channel {0} already exists, please re-run the `/autovoice` command and select a different channel or disable the existing one to reset the channel setup.</value>
+        <comment/>
+    </data>
+
+    <!-- General: Error Handling -->
+    <data name="error.duplicate.setting.title" xml:space="preserve">
+        <value>Duplicate setting!</value>
+        <comment/>
+    </data>
+
+    <data name="error.duplicate.setting.description" xml:space="preserve">
+        <value>The same setting has already been set please try again...</value>
+        <comment/>
+    </data>
+    
+    <data name="exception.error" xml:space="preserve">
+        <value>Something went wrong please report the following error if necessary:
+    
+            ```{0}```
+            **Discord Server:** [{1}]({2})</value>
+        <comment/>
+    </data>
+
+    <data name="parse.error" xml:space="preserve">
+        <value>The channel you are trying to use could not be parsed. Please try again.</value>
+        <comment/>
+    </data>
+    
+</root>
