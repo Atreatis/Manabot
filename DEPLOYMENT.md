@@ -19,7 +19,7 @@ Manabot is configured entirely through environment variables.
 ### Required Variables
 
 ```env
-DOTNET_ENVIRONMENT=Production
+ASPNETCORE_ENVIRONMENT=Production
 DISCORD_TOKEN=your_discord_bot_token
 MONGODB_URI=mongodb+srv://...
 DATABASE_NAME=Production
@@ -29,7 +29,7 @@ DEV_GUILD=1269943746707849246
 
 | Variable             | Description                              |
 | -------------------- | ---------------------------------------- |
-| `DOTNET_ENVIRONMENT` | Runtime environment (use `Production`)   |
+| `ASPNETCORE_ENVIRONMENT` | Runtime environment (use `Production`)   |
 | `DISCORD_TOKEN`      | Discord bot token                        |
 | `MONGODB_URI`        | MongoDB connection string                |
 | `DATABASE_NAME`      | MongoDB database name                    |
