@@ -1,7 +1,7 @@
 ﻿services:
-  manabotv2:
-    image: manabotv2
+  Manabot:
+    image: manabot
     build:
       context: .
-      dockerfile: ManabotV2/Dockerfile
+      dockerfile: Manabot/Dockerfile
 
