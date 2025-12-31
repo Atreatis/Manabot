@@ -6,9 +6,9 @@ contact_links:
     about: Please ask general questions or request help here instead of opening an issue.
 
   - name: 📖 Documentation
-    url: https://github.com/your-org/manabot/wiki
+    url: https://github.com/Atreatis/Manabot/wiki
     about: Check the documentation before submitting an issue.
 
   - name: 💡 Feature Discussion
-    url: https://github.com/your-org/manabot/discussions
+    url: https://github.com/Atreatis/Manabot/discussions
     about: Use discussions for early ideas or open-ended feature brainstorming.
