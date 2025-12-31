@@ -2,5 +2,6 @@ launchSettings.json
 bin/
 obj/
 /packages/
+/node_modules/
 riderModule.iml
 /_ReSharper.Caches/
