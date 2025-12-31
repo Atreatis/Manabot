@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/Atreatis/Manabot/compare/v1.0.0...v1.0.1) (2025-12-31)
+
+### Reverts
+
+* Revert "fix: add missing package to package.json" ([282087c](https://github.com/Atreatis/Manabot/commit/282087c54d32c42439f9d3ca8416dfa05859a1c7))
+
 ## 1.0.0 (2025-12-31)
 
 ### Features
