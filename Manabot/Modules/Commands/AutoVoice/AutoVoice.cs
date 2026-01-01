@@ -1,9 +1,16 @@
 using Discord;
 using Discord.Interactions;
 using Manabot.Resources;
-using Manabot.Utils.Helpers.Embeds;
+using Manabot.Utils.Embeds;
 
 namespace Manabot.Modules.Commands.AutoVoice;
+
+/// <summary>
+/// Auto Voice: Main Command<br/>
+/// This command is used to start a series of embeds in-order to set up, theme, limit or disable a channel for join to
+/// create channels.
+/// </summary>
+/// <param name="embedHelper"></param>
 
 public class AutoVoice(IEmbedHelper embedHelper) : InteractionModuleBase<ShardedInteractionContext>
 {

@@ -1,9 +1,16 @@
 using Discord;
 using Discord.Interactions;
 using Manabot.Resources;
-using Manabot.Utils.Helpers.Embeds;
+using Manabot.Utils.Embeds;
 
 namespace Manabot.Modules.Commands.AutoVoice.Users;
+
+/// <summary>
+/// Auto Voice: Channel Limits<br/>
+/// Limit the amount of users that can join within the channel that is created with the Join to Create channels. These
+/// user limits will be applied upon creation of newly made channels within Discord.
+/// </summary>
+/// <param name="embedHelper"></param>
 
 public class AutoVoiceUsers(IEmbedHelper embedHelper) : InteractionModuleBase<ShardedInteractionContext>
 {

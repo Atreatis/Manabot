@@ -3,6 +3,10 @@ using MongoDB.Driver;
 
 namespace Manabot.Database;
 
+/// <summary>
+/// DbConnect performs several tasks for CRUD operations within the Discord bot. These CRUD actions are either triggered
+/// through `events` or `/commands` on Discord.
+/// </summary>
 public class DbConnect
 {
     private static IMongoCollection<T> GetCollection<T>(string collectionName)

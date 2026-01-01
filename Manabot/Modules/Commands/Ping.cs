@@ -1,9 +1,14 @@
 using Discord;
 using Discord.Interactions;
 using Manabot.Resources;
-using Manabot.Utils.Helpers.Embeds;
+using Manabot.Utils.Embeds;
 
 namespace Manabot.Modules.Commands;
+
+/// <summary>
+/// A simple ping command that tells the bot its latency, shard and some basic information towards the end users.
+/// </summary>
+/// <param name="embedHelper"></param>
 
 public class Ping(IEmbedHelper embedHelper) : InteractionModuleBase<ShardedInteractionContext>
 {

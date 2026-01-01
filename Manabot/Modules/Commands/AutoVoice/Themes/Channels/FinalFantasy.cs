@@ -1,5 +1,8 @@
-namespace Manabot.Modules.Commands.AutoVoice.Themes;
+namespace Manabot.Modules.Commands.AutoVoice.Themes.Channels;
 
+/// <summary>
+/// Final Fantasy: Related Channel Names
+/// </summary>
 public class FinalFantasy : ITheme
 {
     public string GetRandom() => List[new Random().Next(List.Count)];

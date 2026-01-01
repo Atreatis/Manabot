@@ -4,12 +4,17 @@ using Manabot.Database;
 using Manabot.Database.Models;
 using Manabot.Database.Models.AutoVoice;
 using Manabot.Resources;
-using Manabot.Utils.Helpers.Embeds;
+using Manabot.Utils.Embeds;
 using MongoDB.Driver;
-using MongoDB.Driver.Linq;
 
 namespace Manabot.Modules.Commands.AutoVoice.Theme;
 
+/// <summary>
+/// Auto voice: Theme Handler<br/>
+/// Set and/or update the selected theme within the Database and enforce new themes will be used on newly created
+/// channels within the Discord server.
+/// </summary>
+/// <param name="embedHelper"></param>
 public class AutoVoiceThemeSelectHandler(IEmbedHelper embedHelper) : InteractionModuleBase<ShardedInteractionContext>
 {
     [ComponentInteraction("av_theme_save_*")]

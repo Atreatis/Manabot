@@ -1,6 +1,11 @@
 using Discord;
 
-namespace Manabot.Utils.Helpers.Embeds;
+namespace Manabot.Utils.Embeds;
+
+/// <summary>
+/// IEmbed Helper are pre-designed embeds that can be used for any kinds of output, these embeds should still be
+/// re-designed for custom titles to provide better coverage over future generic embeds within the Discord bot.
+/// </summary>
 
 public interface IEmbedHelper
 {

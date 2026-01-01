@@ -4,10 +4,17 @@ using Manabot.Database;
 using Manabot.Database.Models;
 using Manabot.Database.Models.AutoVoice;
 using Manabot.Resources;
-using Manabot.Utils.Helpers.Embeds;
+using Manabot.Utils.Embeds;
 using MongoDB.Driver;
 
 namespace Manabot.Modules.Commands.AutoVoice.Users;
+
+/// <summary>
+/// Auto Voice: Users Handler<br/>
+/// Set and/or update the user limitation within the Database and enforce new user limits upon newly created channels
+/// within the Discord server.
+/// </summary>
+/// <param name="embedHelper"></param>
 
 public class AutoVoiceUsersHandler(IEmbedHelper embedHelper) : InteractionModuleBase<ShardedInteractionContext>
 {

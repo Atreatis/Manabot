@@ -1,5 +1,8 @@
-namespace Manabot.Modules.Commands.AutoVoice.Themes;
+namespace Manabot.Modules.Commands.AutoVoice.Themes.Channels;
 
+/// <summary>
+/// Pirate: Related Channel Names
+/// </summary>
 public class Pirates : ITheme
 {
     public string GetRandom() => List[new Random().Next(List.Count)];

@@ -3,25 +3,23 @@ using Microsoft.Extensions.Logging;
 
 namespace Manabot;
 
-public class Worker : BackgroundService
+/// <summary>
+/// Start Worker with ILogger Background Service to produce log output in-case error handling has to
+/// happen.
+/// </summary>
+
+public class Worker(ILogger<Worker> logger) : BackgroundService
 {
-    private readonly ILogger<Worker> _logger;
-
-    public Worker(ILogger<Worker> logger)
-    {
-        _logger = logger;
-    }
-
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            if (_logger.IsEnabled(LogLevel.Information))
+            if (logger.IsEnabled(LogLevel.Information))
             {
-                _logger.LogInformation("[Manabot] running at: {time}", DateTimeOffset.Now);
-                _logger.LogWarning("[Manabot] warning at: {time}", DateTimeOffset.Now);
-                _logger.LogError("[Manabot] error at: {time}", DateTimeOffset.Now);
-                _logger.LogCritical("[Manabot] critical at: {time}", DateTimeOffset.Now);
+                logger.LogInformation("[Manabot] running at: {time}", DateTimeOffset.Now);
+                logger.LogWarning("[Manabot] warning at: {time}", DateTimeOffset.Now);
+                logger.LogError("[Manabot] error at: {time}", DateTimeOffset.Now);
+                logger.LogCritical("[Manabot] critical at: {time}", DateTimeOffset.Now);
             }
 
             await Task.Delay(1000, stoppingToken);

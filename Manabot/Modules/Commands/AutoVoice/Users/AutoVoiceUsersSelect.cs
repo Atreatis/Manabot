@@ -4,10 +4,16 @@ using Manabot.Database;
 using Manabot.Database.Models;
 using Manabot.Database.Models.AutoVoice;
 using Manabot.Resources;
-using Manabot.Utils.Helpers.Embeds;
+using Manabot.Utils.Embeds;
 using MongoDB.Driver;
 
 namespace Manabot.Modules.Commands.AutoVoice.Users;
+
+/// <summary>
+/// Select the amount of users that is able to join newly created voice channels. These limitations will not be set on
+/// older channels since they will be deleted after usage anyway. 
+/// </summary>
+/// <param name="embedHelper"></param>
 
 public class AutoVoiceUsersSelect(IEmbedHelper embedHelper) : InteractionModuleBase<ShardedInteractionContext>
 {
