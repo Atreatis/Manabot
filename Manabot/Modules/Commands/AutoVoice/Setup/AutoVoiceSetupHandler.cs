@@ -6,11 +6,17 @@ using Manabot.Database.Models;
 using Manabot.Database.Models.AutoVoice;
 using Manabot.Resources;
 using Manabot.Utils.Helpers;
-using Manabot.Utils.Helpers.Embeds;
+using Manabot.Utils.Embeds;
 using MongoDB.Driver;
 
 namespace Manabot.Modules.Commands.AutoVoice.Setup;
 
+/// <summary>
+/// Auto Voice: Setup Handler<br/>
+/// Saves the new entry within the database so the bot knows which channels to listen on when a user joins a Voice
+/// Channel. New channels will automatically be created upon entry of the user within the join to create voice channel.
+/// </summary>
+/// <param name="embedHelper"></param>
 public class AutoVoiceChannelSetupHandler(IEmbedHelper embedHelper) : InteractionModuleBase<ShardedInteractionContext>
 {
     [ComponentInteraction("av_setup_sel_*")]

@@ -4,11 +4,17 @@ using Manabot.Database;
 using Manabot.Database.Models;
 using Manabot.Database.Models.AutoVoice;
 using Manabot.Resources;
-using Manabot.Utils.Helpers.Embeds;
+using Manabot.Utils.Embeds;
 using MongoDB.Driver;
 
 namespace Manabot.Modules.Commands.AutoVoice.Theme;
 
+/// <summary>
+/// Auto Voice: Theme Selection<br/>
+/// Select the theme that should be applied to newly generated channels, the new names will only be generated upon
+/// newly created channels within Discord.
+/// </summary>
+/// <param name="embedHelper"></param>
 public class AutoVoiceThemeSelect(IEmbedHelper embedHelper) : InteractionModuleBase<ShardedInteractionContext>
 {
     [ComponentInteraction("av_theme_sel_*")]

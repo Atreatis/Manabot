@@ -1,8 +1,13 @@
 using Discord;
 using Discord.WebSocket;
-using Manabot.Utils.Helpers.Embeds;
 
-namespace Manabot.Utils.Helpers.Embeds;
+namespace Manabot.Utils.Embeds;
+
+/// <summary>
+/// EmbedHelper builds the embed to be sent as a reply when a command has been executed. This class will build,
+/// structure the embed to be sent towards the Discord channel/server when executed.
+/// </summary>
+/// <param name="client">DiscordShardedClient</param>
 
 public class EmbedHelper(DiscordShardedClient client) : IEmbedHelper
 {

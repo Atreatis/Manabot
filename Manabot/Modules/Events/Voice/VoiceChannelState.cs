@@ -9,6 +9,12 @@ using MongoDB.Driver;
 
 namespace Manabot.Modules.Events.Voice;
 
+/// <summary>
+/// Event handler for voice channel change states these events will be used in-order to set up a new channel and
+/// generate names for Auto Voice channel that is being generated. These voice channels will be randomly made through
+/// the theme system within the Auto Voice commands folder.
+/// </summary>
+
 public class VoiceChannelSate : IDiscordEventHandler
 {
     private DiscordShardedClient _client = null!;
@@ -87,7 +93,6 @@ public class VoiceChannelSate : IDiscordEventHandler
                     UpdateDefinition<GuildSettings>? update = Builders<GuildSettings>.Update.PullFilter(x => x.AutoVoiceChannels, Builders<AutoVoiceChannels>.Filter.Where(x => x.VoiceChannelId == oldState.VoiceChannel.Id));
                     await new DbConnect().UpdateOneAsync("GuildSettings", filter, update);
                     
-                    // await new DbConnect().UpdateOneAsync("GuildSettings", guildFilter, deleteChannel);
                     await oldState.VoiceChannel.DeleteAsync();
                 }
             }
