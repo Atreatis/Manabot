@@ -1,10 +1,16 @@
 using Discord;
 using Discord.Interactions;
 using Manabot.Resources;
-using Manabot.Utils.Helpers.Embeds;
+using Manabot.Utils.Embeds;
 
 namespace Manabot.Modules.Commands.AutoVoice.Theme;
 
+/// <summary>
+/// Auto Voice: Theme Picker<br/>
+/// Pick and choose a different theme for your Auto Voice Generated channels. These channels will be generated with the
+/// new theme names when a new channel has to be made from Join to Create Lobby. 
+/// </summary>
+/// <param name="embedHelper"></param>
 public class AutoVoiceTheme(IEmbedHelper embedHelper) : InteractionModuleBase<ShardedInteractionContext>
 {
     [ComponentInteraction("av_theme_set_*")]

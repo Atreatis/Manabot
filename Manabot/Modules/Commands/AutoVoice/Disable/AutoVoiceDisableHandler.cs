@@ -4,11 +4,17 @@ using Manabot.Database;
 using Manabot.Database.Models;
 using Manabot.Database.Models.AutoVoice;
 using Manabot.Resources;
-using Manabot.Utils.Helpers.Embeds;
+using Manabot.Utils.Embeds;
 using MongoDB.Driver;
 
 namespace Manabot.Modules.Commands.AutoVoice.Disable;
 
+/// <summary>
+/// Auto Voice: Disable Handler<br/>
+/// Deletes the entry from the Database so the Auto Voice channels will no longer be created by the Discord bot and is
+/// ignored in the future unless it has been set up again.
+/// </summary>
+/// <param name="embedHelper"></param>
 public class AutoVoiceDisableHandler(IEmbedHelper embedHelper) : InteractionModuleBase<ShardedInteractionContext>
 {
     [ComponentInteraction("av_disable_save_*")]

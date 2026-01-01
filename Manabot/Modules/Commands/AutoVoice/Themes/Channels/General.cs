@@ -1,5 +1,8 @@
-namespace Manabot.Modules.Commands.AutoVoice.Themes;
+namespace Manabot.Modules.Commands.AutoVoice.Themes.Channels;
 
+/// <summary>
+/// Gaming: Related Channel Names
+/// </summary>
 public class General: ITheme
 {
     public string GetRandom() => List[new Random().Next(List.Count)];

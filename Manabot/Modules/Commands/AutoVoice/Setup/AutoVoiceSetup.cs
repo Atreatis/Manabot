@@ -1,10 +1,16 @@
 using Discord;
 using Discord.Interactions;
 using Manabot.Resources;
-using Manabot.Utils.Helpers.Embeds;
+using Manabot.Utils.Embeds;
 
 namespace Manabot.Modules.Commands.AutoVoice.Setup;
 
+/// <summary>
+/// Auto Voice: Setup<br/>
+/// Set up a channel for Auto Voice in-order to create join to create channels through the bot. These channels will
+/// trigger the bot to create a new voice channel or plainly ignore it when the channel is not within the Database.
+/// </summary>
+/// <param name="embedHelper"></param>
 public class AutoVoiceChannelSetup(IEmbedHelper embedHelper) : InteractionModuleBase<ShardedInteractionContext>
 {
     [ComponentInteraction("av_setup_chan_*")]

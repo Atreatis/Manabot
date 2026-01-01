@@ -3,7 +3,7 @@ using Discord.WebSocket;
 using Discord.Interactions;
 using Manabot.Services;
 using Manabot.Services.Handlers;
-using Manabot.Utils.Helpers.Embeds;
+using Manabot.Utils.Embeds;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -11,6 +11,18 @@ using Microsoft.Extensions.Hosting;
 using Manabot.Modules.Events.Voice;
 
 namespace Manabot;
+
+/// <summary>
+/// <para>Main startup file of Manabot, this contains the main skeleton for starting up and running the Discord bot with
+/// interaction service.</para>
+///
+/// Service order:<br/>
+/// Main Configuration<br/>
+/// Interaction Service<br/>
+/// Guild Events Service<br/>
+/// Event Handler Service<br/>
+/// Discord Services: Singleton / Bot Workers
+/// </summary>
 
 public class Program
 {
@@ -34,20 +46,20 @@ public class Program
                     return new DiscordShardedClient(config);
                 });
 
-                // Register Interaction Service
+                // Interaction Service: Singleton
                 services.AddSingleton<InteractionService>(sp =>
                 {
                     DiscordShardedClient client = sp.GetRequiredService<DiscordShardedClient>();
                     return new InteractionService(client);
                 });
                 
-                // Register Discord Guild Events
+                // Discord Guild Events: Singleton
                 services.AddSingleton<IDiscordEventHandler, VoiceChannelSate>();
                 
-                // Register Event Handler Service
+                // Event Handler: Singleton 
                 services.AddSingleton<EventHandlerService>();
                 
-                // Start up Discord Services
+                // Discord Services: Singleton / Workers
                 services.AddSingleton<InteractionHandlerService>();
                 services.AddSingleton<IEmbedHelper, EmbedHelper>();
                 services.AddHostedService<BotWorker>();
