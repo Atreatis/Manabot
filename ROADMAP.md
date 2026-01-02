@@ -1,69 +1,166 @@
-# Manabot Roadmap
+This roadmap outlines the planned direction for Manabot.
+It is a living document and may evolve based on community feedback,
+feature requests, and contributor availability.
 
-This roadmap outlines the planned direction for **Manabot**. It is a living document and may evolve based on community feedback, feature requests, and contributor availability.
+-----------------------------------
 
----
-
-## 🎯 Project Goals
-
+🎯 PROJECT GOALS
+----------------
 - Provide reliable, guild-focused tooling for MMORPG communities
-- Minimize manual moderation and administrative overhead
-- Maintain a clean, extensible, and configurable architecture
+- Remain fully MMORPG-agnostic (no hard dependencies on specific games)
+- Reduce manual moderation and administrative overhead
+- Maintain a clean, modular, and extensible architecture
 - Support both self-hosted and managed (hosted) deployments
+- Prioritize transparency, auditability, and role-based permissions
 
----
+-----------------------------------
 
-## 🚀 Near-Term (v1.x)
+🚀 NEAR-TERM (v1.x) — MVP FOUNDATION
+----------------------------------
 
-### Guild & Community Management
-- Enhanced guild join applications
-    - Custom application forms
-    - Role-based review permissions
-    - Application approval / rejection workflows
-- Join-to-create channel improvements
-    - Per-theme permissions
-    - Auto-cleanup rules
-    - Voice and text variants
+CORE GUILD & COMMUNITY MANAGEMENT
+---------------------------------
+- Rank & Role Management
+  - Custom guild ranks mapped to Discord roles
+  - Promotion and demotion commands
+  - Permission templates per rank
+  - Officer-only audit logs
 
-### Configuration & UX
+- Member Profile Registry
+  - Per-member profiles:
+    - Character names
+    - Preferred roles (tank, healer, DPS, crafter, etc.)
+    - Time zone
+
+- Recruitment & Join Applications
+  - Custom application forms
+  - Role-based review permissions
+  - Approval / rejection workflows
+  - Auto-role assignment on acceptance
+
+- New Member Onboarding Flow
+  - Automated welcome messages
+  - Rules and expectations delivery
+  - Setup checklist (roles, profiles, channels)
+  - Optional mentor assignment
+
+COMMUNICATION & UX
+------------------
+- Announcement System
+  - Target announcements by rank or role
+  - Optional DM delivery for critical notices
+  - Expiration for outdated announcements
+
+- Join-to-Create Channels
+  - Per-theme permissions
+  - Auto-cleanup once abandoned
+  - Voice chat only
+
+CONFIGURATION & STABILITY
+-------------------------
 - Centralized configuration commands
 - Improved error handling and user feedback
 - Localization groundwork
 
----
+-----------------------------------
 
-## 🧭 Mid-Term (v2.x)
+🧭 MID-TERM (v2.x) — QUALITY OF LIFE & AUTOMATION
+------------------------------------------------
 
-### Automation & Moderation
+EVENTS & PARTICIPATION
+----------------------
+- Event & Raid Scheduling
+  - Time zone–aware scheduling
+  - Role requirements and capacity limits
+  - Signup via reactions or slash commands
+  - Automatic reminders
+
+- Attendance & Reliability Tracking
+  - Track signups vs attendance
+  - Late and no-show tracking
+  - Reliability summaries for officers
+
+AUTOMATION & MODERATION
+-----------------------
 - Scheduled announcements
 - Activity tracking and member statistics
 - Auto-role assignment based on criteria
+- Moderation & Conduct Tracking
+  - Guild rules storage
+  - Warning and note logging
+  - Escalation thresholds
+  - Private officer logs
+
+VISIBILITY & ACCOUNTABILITY
+---------------------------
 - Audit logs for administrative actions
+- Cross-channel logging for:
+  - Promotions and role changes
 
-### Infrastructure
-- Database schema versioning
-- Backup and restore tooling
-- Performance and scalability optimizations
+-----------------------------------
 
----
+🌌 LONG-TERM (v3.x+) — ADVANCED SYSTEMS & SCALE
+----------------------------------------------
 
-## 🌌 Long-Term
+ADVANCED GUILD SYSTEMS
+----------------------
+- Availability & Time Zone Analyzer
+  - Weekly availability input
+  - Suggested optimal event times
+  - Leadership summaries
 
-### Advanced Guild Systems
-- Event and raid scheduling
-- Attendance tracking
-- Integration with external game APIs where available
+- Shared Resource Ledger
+  - Abstract tracking of guild resources
+  - Deposits and withdrawals
+  - Approval workflows
+  - Full audit history
 
-### Platform Expansion
-- Plugin or module system for custom extensions
+COMMUNITY & CULTURE
+-------------------
+- Recognition & Rewards System
+  - Commendations or kudos
+  - Seasonal recognition
+  - Cosmetic roles or badges
 
----
+- Polls & Decision Tools
+  - Structured voting
+  - Rank-weighted options
+  - Transparent results
 
-## 🤝 Community Driven
+PLATFORM & EXTENSIBILITY
+------------------------
+- Multi-Game Support
+  - Game-specific tags and roles
+  - Filtered announcements and events
+  - Single Discord for multiple MMORPGs
 
-Many features will be prioritized based on:
+- Plugin / Module System
+  - Custom extensions
+  - Optional feature bundles
+  - Community-developed modules
+
+- External Integrations
+  - Integration with external game APIs where available
+  - Optional, non-blocking connectors
+
+-----------------------------------
+
+🤝 COMMUNITY DRIVEN DEVELOPMENT
+-------------------------------
+Feature prioritization is guided by:
 - Approved feature requests
 - Community discussion and demand
-- Contributor interest
+- Contributor interest and availability
 
-If you have an idea, open a **Feature Request** issue and help shape the future of Manabot.
+Have an idea?
+Open a Feature Request issue and help shape the future of Manabot.
+
+-----------------------------------
+
+DESIGN PRINCIPLES
+-----------------
+- MMORPG-agnostic by default
+- Modular and configurable systems
+- Permission-first architecture
+- Transparency without micromanagement
+- Scales from small guilds to large communities
